@@ -13,8 +13,10 @@ class MainActivity : AppCompatActivity() {
         val activityBinding =
             DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
 
-        activityBinding.tvName.text = "Ko Ye"
-        activityBinding.tvAddress.text = "Yangon, Myanmar"
+//        activityBinding.tvName.text = "Ko Ye"
+//        activityBinding.tvAddress.text = "Yangon, Myanmar"
+
+        activityBinding.user = UserVO("Ko Ye", "Sanchaung Township, Yangon, Myanmar")
 
     }
 }
