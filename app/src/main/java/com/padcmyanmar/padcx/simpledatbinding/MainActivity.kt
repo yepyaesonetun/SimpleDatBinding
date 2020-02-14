@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
 //        activityBinding.tvAddress.text = "Yangon, Myanmar"
 
         activityBinding.user = UserVO("Ko Ye", "Sanchaung Township, Yangon, Myanmar")
+        activityBinding.handler = EventHandler(mContext = this)
 
     }
 }

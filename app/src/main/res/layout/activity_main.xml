@@ -8,6 +8,10 @@
         <variable
             name="user"
             type="com.padcmyanmar.padcx.simpledatbinding.UserVO" />
+
+        <variable
+            name="handler"
+            type="com.padcmyanmar.padcx.simpledatbinding.EventHandler" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -37,6 +41,17 @@
             app:layout_constraintEnd_toEndOf="@+id/tvName"
             app:layout_constraintStart_toStartOf="@+id/tvName"
             app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+        <Button
+            android:id="@+id/btnHi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Say Hi"
+            android:onClick="@{() -> handler.onButtonClick(user.name)}"
+            app:layout_constraintEnd_toEndOf="@+id/tvAddress"
+            app:layout_constraintStart_toStartOf="@+id/tvAddress"
+            app:layout_constraintTop_toBottomOf="@+id/tvAddress" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
